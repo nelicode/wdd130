@@ -1,58 +1,79 @@
+/* Requirement: navigation (nav) */
+/* CSS must include a nav rule with declarations for background-color and padding. */
 nav {
-    background-color: steelblue;
+    background-color: steelblue; 
     padding: 10px;
 }
 
+/* Requirement: navigate a (nav a) */
+/* CSS must include a nav a rule with color, padding, and display: block; */
 nav a {
-    color: white;
+    color: white; 
     padding: 10px;
     display: block;
 }
 
-h1 {
-    color: steelblue;
+/* Requirement: principal (main) */
+/* CSS must include a main rule with a max-width declaration. */
+main {
+    /* This is essential for centering the main content and limiting its width */
+    max-width: 960px; /* A common value for main content */
+    margin: 0 auto; /* This centers the 'main' block */
+    padding: 2em; /* Adds some space around the content */
 }
 
+/* Requirement: h1 */
+/* CSS must include an h1 rule with a color declaration. */
+h1 {
+    color: steelblue; 
+}
+
+/* Requirement: main image (main img) */
+/* CSS must include a main img rule with width, height, border, padding, and box-shadow. */
 main img {
-    width: 100px;
+    width: 100%; /* Using 100% to make it large */
     height: auto;
     border: 1px solid steelblue;
     padding: 2px;
     box-shadow: 0 0 30px gray;
 }
 
-p {
-    padding: 0;
-}
-
-
-#aside {
-    border: 1px solid steelblue;
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
-}
-
-p {
-    padding: 0;
-}
-
+/* Requirement: aside (aside) */
+/* CSS must include an aside rule with width, margin, border, padding, background-color, and color. */
 aside {
     width: 20em;
     margin: 1em;
-    border: 1px solid rgba(0, 0, 0, 0.2); /* why use rgba instead of hex here? */
+    border: 1px solid rgba(0, 0, 0, 0.2);
     padding: 1em;
     background-color: #eee;
     color: #333;
-    text-align: center;
+    text-align: center; 
 }
 
+/* Requirement: aside image (aside img) */
+/* CSS must include an aside img rule with width: 200px and height: auto. */
 aside img {
     width: 200px;
     height: auto;
 }
 
+/* Requirement: pag (p) */
+/* CSS must include a p rule with padding: 0; declaration. */
+p {
+    padding: 0;
+}
+
+/* Requirement: footer (pie de página) */
+/* CSS must include a footer rule with margin-top, border-top, and text-align: center. */
 footer {
     margin-top: 1em;
     border-top: 1px solid #000;
     text-align: center;
+}
+
+/* Extra rule from your first screenshot */
+#aside {
+    border: 1px solid steelblue;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
 }
