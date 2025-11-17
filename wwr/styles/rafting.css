@@ -28,7 +28,7 @@
 body {
     background-color: var(--primary-color);
     font-family: var(--body-font);
-    color: var(--secondary-color);
+    color: var(--dark-color);
 }
 
 header, main, footer {
@@ -152,7 +152,6 @@ section {
     padding: 40px;
     background-color: var(--light-gray);
     text-align: left;
-    color: var(--dark-color);
 }
 
 h2 {
