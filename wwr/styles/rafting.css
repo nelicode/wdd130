@@ -1,10 +1,9 @@
 /* ------------------------------------------------------- */
-/* 1. Color and Font Variables                            */
+/* 1. Color and Font Variables                            */
 /* ------------------------------------------------------- */
 
 :root {
-    /* ... your variables ... */
-     --heading-font: "Georgia", serif;
+    --heading-font: "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
 
     --primary-color: #2b5d8f; 
@@ -15,7 +14,10 @@
     --header-bg: #2b5d8f;
 }
 
-  :root{
+/* ------------------------------------------------------- */
+/* 2. Universal Reset (Must be placed directly after :root)*/
+/* ------------------------------------------------------- */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
