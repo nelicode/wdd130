@@ -140,7 +140,6 @@ nav a:hover {
     border: 3px solid white;
     border-radius: 5px;
     flex-shrink: 0;
-    float:right 0;
 }
 
 .hero article p {
@@ -177,7 +176,7 @@ p {
     line-height: 1.8;
     font-size: 1rem;
     padding: 0 20px;
-    text-align: left !important;
+    text-align: left;
     margin: 0;
 
 }
@@ -253,6 +252,6 @@ footer nav.socialmedia a {
     display: block;
     line-height: 0;
 }
-footer nav.social img:hover {
+footer nav.socialmedia img:hover {
     transform: scale(1.1);
 }
