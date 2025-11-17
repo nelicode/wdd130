@@ -152,6 +152,7 @@ section {
     padding: 40px;
     background-color: var(--light-gray);
     text-align: left;
+    color: var(--dark-color);
 }
 
 h2 {
