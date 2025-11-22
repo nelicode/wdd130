@@ -43,7 +43,13 @@ header, main, footer {
 header {
     background-color: var(--secondary-color);
     padding: 20px 40px;
+
 }
+header {display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+    padding: 20px;
+    background-color: #d8bfd8; }
 
 header img {
     width: 100px;
@@ -72,6 +78,20 @@ nav a {
     display: block;
 }
 
+nav {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+nav a {
+    padding: 10px 20px;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    border: 1px solid #ccc;
+}
+
 nav a:hover {
     color: var(--accent-color);
 }
@@ -83,6 +103,14 @@ nav a:hover {
 .hero {
     position: relative;
     width: 100%;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    border: 2px solid black;
 }
 
 .hero img {
@@ -148,6 +176,14 @@ nav a:hover {
 /* 6. Regular Sections                                    */
 /* ------------------------------------------------------- */
 
+.history {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 20px;
+    padding: 20px;
+    border: 2px solid black;
+}
+
 section {
     padding: 40px;
     background-color: var(--light-gray);
@@ -179,6 +215,14 @@ p {
 /* ------------------------------------------------------- */
 /* 7. Footer                                              */
 /* ------------------------------------------------------- */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #d8bfd8;
+}
 
 footer {
     background-color:  white;
@@ -249,4 +293,9 @@ footer nav.socialmedia a {
 }
 footer nav.socialmedia img:hover {
     transform: scale(1.1);
+}
+
+.sociallinks {
+    display: flex;
+    gap: 10px;
 }
