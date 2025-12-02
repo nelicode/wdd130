@@ -45,7 +45,7 @@ header, main, footer {
 
 header {
     display: grid;
-    grid-template-columns: 150px auto;
+    grid-template-columns: 200px auto;
     align-items: center;
     padding: 20px 0px;
     background-color: var(--primary-color);
@@ -143,7 +143,7 @@ nav a:hover {
     right: 0;
     width: 100%;
     background-color: rgba(43, 93, 143, 0.85);
-    color: white;
+    color: var(--secondary-color);
     padding: 25px 40px;
     display: block;
     margin: 0;
@@ -191,16 +191,6 @@ nav a:hover {
     border-radius: 10px;  
     background-color: white;  
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-}
-
-.adventure-grid img {
-    width: 130%;
-    max-width: 130px;
-    height: 100px;
-    object-fit: cover;
-    border: 3px solid #ccc;
-    border-radius: 8px;
-    box-shadow: none;
 }
 
 .adventure-grid figcaption {
@@ -260,7 +250,7 @@ footer {
     align-items: center;
     padding: 40px;
     background-color:var(--footer-bg-color);
-    color: white;
+    color: var(--secondary-color);
     max-width: 74%;  
     margin: 0;
 }
@@ -282,19 +272,15 @@ footer nav.socialmedia {
     margin: 0;
 
 }
-
 footer nav.socialmedia a {
+    display: block;
+    line-height: 0;
     text-align: left;
-    color: black;
+    color: var(--dark-color);
     font-size: 40px;
-    transition: all 0.3s ease;
     text-decoration: none;
+    transition: transform 0.3s ease;
 }
-
-footer nav.socialmedia a:hover {
-    transform: scale(1.1);
-}
-
 footer nav.socialmedia .fa-facebook:hover {
     color: #1877f2;
 }
@@ -327,14 +313,6 @@ footer nav.socialmedia img {
     border-radius: 5px;
    
 }
-footer nav.socialmedia a {
-    display: block;
-    line-height: 0;
-    transition: transform 0.3s ease;
-}
-footer nav.socialmedia img:hover {
-    transform: scale(1.1);
-}
 
 .sociallinks {
     display: flex;
@@ -356,10 +334,6 @@ aside {
   grid-column: 1/2;
   grid-row: 1/2;
 }
-header {
-    display: grid;
-    grid-template-columns: 200px auto;
-    align-items: center;}
 
 .history {
     display: grid;
