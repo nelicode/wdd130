@@ -8,7 +8,7 @@
     --primary-color: #2b5d8f; 
     --secondary-color: #ffffff;
     --accent-color: #1a73e8;
-  
+    --footer-bg-color: #1c1d1e;
     --dark-color: #0d1b2a;
     --light-gray: #f5f5f5;
     --header-bg: #2b5d8f;
@@ -259,7 +259,7 @@ footer {
     grid-template-columns: 1fr auto 1fr;
     align-items: center;
     padding: 40px;
-    background-color: black;
+    background-color:var(--footer-bg-color);
     color: white;
     max-width: 74%;  
     margin: 0;
