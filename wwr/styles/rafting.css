@@ -139,7 +139,7 @@ nav a:hover {
 .hero article {
     position: absolute;
     bottom: 2rem;
-    left: 1;
+    left: 0;
     right: 0;
     width: 100%;
     background-color: rgba(43, 93, 143, 0.85);
