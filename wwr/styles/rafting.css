@@ -308,7 +308,7 @@ footer nav.socialmedia img {
     height: 45px;
     transition: transform 0.3s ease;
     display: block;
-    background-color: var(--secondary-color));
+    background-color: var(--secondary-color);
     padding: 5px;
     border-radius: 5px;
    
