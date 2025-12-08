@@ -323,19 +323,15 @@ footer nav.socialmedia img:hover {
     display: flex;
     gap: 10px;
 }
-iframe {
-    border: 2px solid #ccc !important;
-    border-radius: 5px !important;
-    width: 100% !important;
-    height: 400px !important;
-}
-
 /*Contact Us Page Styling*/
 
 .contact-page {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
+    padding: 50px 50px; 
+    max-width: 100px;
+    
 }
 
 .contact-info {
@@ -344,14 +340,17 @@ iframe {
     text-align: center;
 }
 
+
  .gmap {
     grid-column: 1/-1;
     grid-row: 2;
     border: 0;
+   
     
  }
- 
- form{
+
+ .contact-form  {
     grid-column: 2;
     grid-row: 2;
+    
  }

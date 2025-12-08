@@ -16,16 +16,14 @@
     <header>
         <img src="images/z-splash.png" alt="Rio Bravo Expeditions Logo">
         <nav>
-            <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="trips.html">Trips</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
-            </ul>
         </nav>
     </header>
 
-    <main>  
+    <main class="contact-page">  
         <section class="contact-info">
             <h1>Rio Bravo Expeditions Company</h1>
             <address>     
@@ -34,15 +32,15 @@
             <a href="tel:+19999999999">1 999-999-9999</a><br>
             <a href="mailto:company@rafting.com">company@rafting.com</a>
             </address>
-
         </section>
+
+        <section class="gmap">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d231881.41695318357!2d-111.6499598378302!3d40.21592614611872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x874d90bc4aa0b68d%3A0xbf3eb3a3f30fdc4c!2sUniversidad%20Brigham%20Young!5e0!3m2!1ses-419!2spe!4v1765116917897!5m2!1ses-419!2spe" 
             width="400" 
             height="300" 
-            class="gmap"
             allowfullscreen="" 
             loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade" class="gmap"></iframe>            rade"class="gmap"></iframe>
+            referrerpolicy="no-referrer-when-downgrade" class="gmap"></iframe>         
 
         <section class="employees">
             <h2>We Are Here to Serve You</h2>
@@ -63,13 +61,12 @@
             </figure>
         </section>
 
-        <form action="#"> class <contact-form>
+        <form action="#" class="contact-form">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required placeholder="Your full name">
 
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required placeholder="Your email address">
-
             <div class="purpose">
                 <p>Message Purpose:</p>
                 <fieldset>
@@ -81,9 +78,6 @@
 
                     <input id="feedback" type="radio" name="purpose" value="feedback">
                     <label for="feedback">Website Suggestion</label>
-
-                    <input id="other" type="radio" name="purpose" value="other">
-                    <label for="other">Other</label>
                 </fieldset>
             </div>
 
