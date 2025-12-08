@@ -329,12 +329,6 @@ iframe {
     width: 100% !important;
     height: 400px !important;
 }
-
- contact-info    {
-    grid-column: 1/-1;
-    justify-self: center;
-    text-align: center;
- }
 /*Contact Us Page Styling*/
 
 .contact-page {
