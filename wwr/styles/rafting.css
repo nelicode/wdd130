@@ -327,9 +327,9 @@ footer nav.socialmedia img:hover {
 
 .contact-page {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    padding: 50px 50px; 
+    grid-template-columns: 5fr 1fr;
+    gap: 4rem;
+    padding: 100px 50px; 
     max-width: 100px;
     
 }
