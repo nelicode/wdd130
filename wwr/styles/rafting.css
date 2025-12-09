@@ -242,7 +242,7 @@ footer nav.socialmedia {
     margin-top: 15px;
     display: flex;
     justify-content: flex-end;
-    gap: 1 rem;
+    gap: 1 rem 0rem;
     grid-column: -1;
     background-color: unset;
 }
@@ -292,10 +292,6 @@ footer nav.socialmedia img:hover {
 }
 /*Contact Us Page Styling*/
 /* default grid layout for all pages */
-*
-*   Homepage Styling - Begin
-*
-****************************************/
 .hero-msg {
     justify-content: center;
 }
