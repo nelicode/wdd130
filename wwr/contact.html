@@ -5,23 +5,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="since 1995. Safe, exciting adventures for everyone.">
-    <meta name="author" content="Nelida Colque Salas">
     <title>Contact Us - Rio Bravo Expeditions</title>
+    <meta name="description" 
+    content="since 1995. Safe, exciting adventures for everyone.">
+    <meta name="author" content="Nelida Colque Salas">
     <link rel="stylesheet" href="styles/rafting.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
+
     <header>
-        <img src="images/z-splash.png" alt="Rio Bravo Expeditions Logo">
+        <a href="" class="home-link"><img src="images/z-splash.png"
+              alt="Rio Bravo Expeditions Logo"></a>
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="trips.html">Trips</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-                </ul>
+            <a href="index.html" class="navitem">Home</a>
+            <a href="about.html" class="navitem">About Us</a>
+            <a href="trips.html" class="navitem">Trips</a>
+            <a href="contact.html" class="navitem">Contact Us</a>
         </nav>
     </header>
 
@@ -31,15 +31,14 @@
             <address>     
                 123 Main Rivers Street<br>
                 Kolob, California 90210<br>
-            <a href="tel:+19999999999">1 999-999-9999</a><br>
+            <a href="tel:+19873659000">1 987-365-9000</a><br>
             <a href="mailto:company@rafting.com">company@rafting.com</a>
             </address>
-        </section>
 
-        <section class="gmap">
+        </section>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d231881.41695318357!2d-111.6499598378302!3d40.21592614611872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x874d90bc4aa0b68d%3A0xbf3eb3a3f30fdc4c!2sUniversidad%20Brigham%20Young!5e0!3m2!1ses-419!2spe!4v1765116917897!5m2!1ses-419!2spe" 
-            width="400" 
-            height="300" 
+            width="500" 
+            height="400" 
             allowfullscreen="" 
             loading="lazy" 
             referrerpolicy="no-referrer-when-downgrade" class="gmap"></iframe>         
@@ -60,18 +59,20 @@
             <figure class="employee">
                 <img src="images/employee3.jpg" alt="Marcos Ruiz">
                 <figcaption>Marcos Ruiz - Operations Manager</figcaption>
+
             </figure>
         </section>
-
         <form action="#" class="contact-form">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required placeholder="Your full name">
 
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required placeholder="Your email address">
+
             <div class="purpose">
                 <p>Message Purpose:</p>
                 <fieldset>
+
                     <input id="inquiry" type="radio" name="purpose" value="inquiry" required> 
                     <label for="inquiry">General Inquiry</label>
                     
@@ -81,8 +82,9 @@
                     <input id="feedback" type="radio" name="purpose" value="feedback">
                     <label for="feedback">Website Suggestion</label>
                 </fieldset>
+
             </div>
-            <div class="full-w"
+            <div class="full-w">
             <label for="message">Message:</label>
             <textarea id="message" name="message" rows="4" required placeholder="Your message"></textarea>
             </div>
@@ -91,9 +93,7 @@
                 <input type="checkbox" id="subscribe" name="subscribe" value="yes">
                 <label for="subscribe">Subscribe to our newsletter</label>
             </div>
-
-            <button type="submit"
-            class="btnbtn-submit">Get in Touch!</button>
+            <button type="submit" class="btn btn-submit">Get in Touch!</button>
         </form>
     </main>
 

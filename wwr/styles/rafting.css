@@ -3,279 +3,250 @@
 /* ------------------------------------------------------- */
 
 :root {
-    --heading-font: "Georgia", serif;
-    --body-font: Arial, Helvetica, sans-serif;
+ --primary-color: #1157ab;
+    --secondary-color: #622e30;
+    --accent1-color: #7e2d2d;
+    --accent2-color: #225242;
+    --accent3-color: #624d1c;
+    --accent4-color: #b0e6fc;
+    --white: #fff6f6;
+    --black: #0e0c0c;
+    --light-gray: #e1e1e1;
+    --focus-red: #d81616;
+    --focus-green: #1cfc63;
+    --focus-gray: #3f3f3f;
+    --footer-background-color: #242321;
 
-    --primary-color: #2b5d8f; 
-    --secondary-color: #ffffff;
-    --accent-color: #1a73e8;
-    --dark-color: #0d1b2a;
-    --light-gray: #f5f5f5;
-    --header-bg: #2b5d8f;
+    --transparent-background-color: #03062299;
+
+    --table-background-color-odd: #d9d5d5;
+    --table-background-color-even: #ccc3ef;
+    
+    --button-background-color: #00d148;
+    --button-color: #0e1e20;
+    --button-color-hover: #f3a530;
+    --button-border-color: #3e3e3e;
+
+    /* CTA Button colors */
+    --cta-button-color: #f2f2f2;
+    --cta-button-background-color: #912727;
+    --cta-button-color-hover: #04083e;
+    --cta-button-background-color-hover: #f3a530;
+        /* Top Navigation Colors */
+    --nav-background-color: var(--primary-color);
+    --nav-link-color: var(--white);
+    --nav-hover-link-color: var(--primary-color);
+    --nav-hover-background-color: var(--white);
+
+    /* Fonts for all pages */
+    --heading-font: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    --paragraph-font: Arial, Helvetica, sans-serif;
+
+    /* Box Shadow Colors */
+    --box-shadow: 0px -10px 20px 5px rgba(0, 0, 0, .23),
+        10px 0px 10px 5px rgba(0, 0, 0, .23),
+        0px 10px 10px 5px rgba(0, 0, 0, .23),
+        -10px 0px 10px 5px rgba(0, 0, 0, .23)
 }
-
-*{
-
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* ------------------------------------------------------- */
-/* 3. Body and General Layout                             */
-/* ------------------------------------------------------- */
-
+/***************************************
+*
+*   defaults for all pages - Begin
+*
+****************************************/
 body {
-    background-color: var(--secondary-color);
-    font-family: var(--body-font);
-    color: var(--dark-color);
+    font-family: var(--paragraph-font);
+    font-weight: 400;
+    color: var(--black);
 }
 
-header, main, footer {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-/* ------------------------------------------------------- */
-/* 4. Header + Navigation                                 */
-/* ------------------------------------------------------- */
-
-header {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    align-items: center;
-    gap: 20px;
-    padding: 20px 40px;
-    background-color: var(--lavender);
-}
-
-header img {
-    width: 100px;
-    height: auto;
-    justify-self: start;
-}
-
-nav {
-    justify-self: start;
-}
-
-nav ul {
-    display: flex;
-    gap: 10px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav li {
-    display: block;
-}
-
-nav a {
-    display: block;
-    padding: 10px 20px;
-    background-color: dark var(--dark-color);
-    text-decoration: none;
-    color: var(--dark-color);
-    border: 1px solid #ccc;
-    font-weight: normal;
-    font-size: 0.95rem;
-    transition: color 0.3s ease;
-}
-
-nav a:hover {
-    color: #1a73e8;
-}
-nav {
-    display: flex;
-    gap: 10px;
-    justify-content: flex-end;
-}
-
-nav a {
-    padding: 10px 20px;
-    background-color:var(--dark-color);
-    text-decoration: none;
-    color: black;
-    border: 1px solid #ccc;
-}
-
-nav a:hover {
-    color: var(--accent-color);
-}
-
-/* ------------------------------------------------------- */
-/* 5. HERO Section                                        */
-/* ------------------------------------------------------- */
-
-.hero {
-    position: relative;
-    width: 100%;
-}
-
-.hero {
-    position: relative;
-    width: 100%;
-    margin-bottom: 0;
-}
-
-.hero img.hero-img {
-    width: 100%;
-    display: block;
-    height: 500px;
-    object-fit: cover;
-}
-
-/* Centered title over the image */
-.hero h1 {
-    position: absolute;
-    top: 8%;
-    left: 0%;
-    right: 0%;
-    width: 100%;
-    background-color: rgba(43, 93, 143, 0.85);
-    color:var(--dark-color);
-    padding: 15px 0%;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: var(--heading-font);
+    color: var(--primary-color);
+    padding: .5em;
+}
+
+h1 {
+    font-size: 3rem;
+
+}
+
+h2 {
     font-size: 2.5rem;
-    font-weight: bold;
-    border-radius: 0;
-    text-align: center;
-    line-height: 1.3;
-    margin: 0%;
-    white-space: nowrap;
 }
 
-/* Article overlay on image */
-.hero article {
-    position: absolute;
-    bottom: 20px;
-    left: 0;
-    right: 0;
-    width: 100%;
-    background-color: rgba(43, 93, 143, 0.85);
-    color: var(--dark-color);
-    padding: 25px 40px;
-    display: block;
-    margin: 0;
-    border-radius: 5px;
-    overflow: auto;
-}
-
-.hero article img {
-    width: 180px;
-    height: 120px;
-    object-fit: cover;
-    border: 3px solid var(--dark-color);
-    border-radius: 5px;
-    float: right;
-    margin-left:  15px;
-}
-
-.hero article p {
-    line-height: 1.7;
-    font-size: 0.95rem;
-    text-align: left;
-}
-/* ------------------------------------------------------- */
-/* 6. Adventure Section                                   */
-/* ------------------------------------------------------- */
-
-.adventures {
-    background-color: var(--secondary-color);
-}
-
-.adventure-grid {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    gap: 15px;
-    padding: 20px;
-}
-
-.adventure-grid figure {
-    flex: 1;
-    text-align: center;
-    margin: 0;
-}
-
-.adventure-grid img {
-    width: 100%;
-    max-width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border: 2px solid #ccc;
-    border-radius: 5px;
-}
-
-.adventure-grid figcaption {
-    margin-top: 10px;
-    font-size: 0.9rem;
-    color: var(--dark-color);
-}
-
-/* ------------------------------------------------------- */
-/* 6. Regular Sections                                    */
-/* ------------------------------------------------------- */
-
-
-section {
-    padding: 40px;
-    background-color: var(--light-gray);
-    text-align: left;
-}
-
-section h2 {
-    font-family: var(--heading-font);
+h3 {
     font-size: 2rem;
-    background-color: var(--header-bg);
-    color: white;
-    padding: 15px 20px;
-    margin: -40px -40px 20px -40px;
-    font-weight: bold;
-    text-align: center;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+h6 {
+    font-size: 1rem;
 }
 
 p {
-    line-height: 1.8;
-    font-size: 1rem;
-    padding: 0 20px;
-    text-align: left;
-    margin: 0;
-
+    padding: 10px;
+    color: var(--black);
 }
 
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.center {
+    justify-self: center;
+    align-self: center;
+}
+
+/* Sets default width and centers content in browser */
+header,
+main,
+footer {
+    max-width: 1248px;
+    margin: auto;
+}
+
+/* header items styling */
+header {
+    display: grid;
+    grid-template-columns: 200px auto;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--nav-background-color);
+}
+
+.home-link {
+    display: contents;
+}
+
+.navitem {
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-family: var(--heading-font);
+    color: var(--nav-link-color);
+    display: flex;
+    align-items: center;
+}
+
+.navitem:hover {
+    background-color: var(--nav-hover-background-color);
+    color: var(--nav-hover-link-color);
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--footer-background-color);
+    color: var(--white);
+    margin-top: 100px;
+}
+
+/* Footer Styling */
+footer p {
+    color: var(--white);
+}
+
+.footer-menu {
+    color: var(--white);
+}
+
+.socialmedia img {
+    width: 2rem;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    align-items: center;
+}
+.hero {
+    position: relative;
+}
+.hero > img {
+    display: block;
+    width: 100%;
+}
+
+/* Button styling */
+.button-box {
+    background-color: var(--button-background-color);
+    font-size: 1.5em;
+    color: var(--button-color);
+    border-radius: 20px;
+    padding: 1rem 2rem;
+    justify-self: center;
+    align-self: center;
+    min-width: 15rem;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.button-box:hover {
+    background-color: var(--button-color-hover);
+}
+
+.cta-button {
+    background-color: var(--cta-button-background-color);
+    font-size: 1.5em;
+    color: var(--cta-button-color);
+    border-radius: 20px;
+    padding: 1rem 2rem;
+    justify-self: center;
+    align-self: center;
+    min-width: 15rem;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.cta-button:hover {
+    background-color: var(--cta-button-background-color-hover);
+    color: var(--cta-button-color-hover);
+}
 /* ------------------------------------------------------- */
 /* 7. Footer                                              */
 /* ------------------------------------------------------- */
 
-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 40px;
-    background-color: var(--lavender);
-}
-
-footer p {
-    font-size: 0.9rem;
-    margin: 0;
-    padding: 0;
-    text-align: left;
-    color: black;
-}
-
 footer nav.socialmedia {
     margin-top: 15px 0;
     display: flex;
-    justify-content: flex-start;
-    gap: 15px;
-    padding: 0;
+    justify-content: flex-end;
+    gap: 1 rem;
+    grid-column: -1;
+    background-color: unset;
 }
-footer nav.socialmedia a {
-    color: black;
-    font-size: 40px;
-    transition: all 0.3s ease;
+.socialmedia a {
     text-decoration: none;
 }
 
@@ -324,40 +295,373 @@ footer nav.socialmedia img:hover {
     gap: 10px;
 }
 /*Contact Us Page Styling*/
+/* default grid layout for all pages */
+*
+*   Homepage Styling - Begin
+*
+****************************************/
+.hero-msg {
+    justify-content: center;
+}
+
+.home-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+.home-title {
+    margin: 1rem 0;
+    color: var(--white);
+    background-color: var(--transparent-background-color);
+    justify-self: center;
+    min-width: 50rem;
+    text-align: center;
+    line-height: 3rem;
+}
+
+.home-subtitle {
+    /* margin: 20px 0; */
+    color: var(--white);
+    background-color: var(--transparent-background-color);
+    justify-self: center;
+}
+
+.book {
+    margin: 2rem 0;
+}
+
+.newsletter {
+    grid-column: 4/11;
+    grid-row: 7/9;
+    justify-self: center;
+    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--accent3-color);
+    padding: 0 2em;
+    border-radius: 1.5em;
+    box-shadow: var(--box-shadow);
+}
+
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    color: var(--white);
+    margin: 0 0 1em 0;
+}
+
+.newsletter p {
+    justify-self: center;
+    font-size: 1.5em;
+    color: var(--white);
+}
+
+.newsletter-form .field-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 10px;
+    margin: 1em;
+    align-items: center;
+}
+
+.newsletter-form label {
+    grid-column: 1;
+
+    text-align: right;
+    color: var(--white);
+    margin: 0;
+}
+
+.newsletter-form input {
+    grid-column: 2;
+
+}
+
+.newsletter-form button {
+    background-color: var(--cta-button-color);
+    color: var(--cta-button-color-hover);
+    padding: .5em 1em
+}
+
+.newsletter-form button:hover {
+    background-color: var(--button-color-hover);
+    color: var(--cta-button-color);
+}
+
+.card {
+    margin: 100px 0;
+    grid-row: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rapids-card {
+    grid-column: 2 / 4;
+    grid-row: 2;
+}
+
+.camping-card {
+    grid-column: 6/8;
+    grid-row: 2;
+}
+
+.rivers-card {
+    grid-column: 10/12;
+    grid-row: 2;
+}
+
+.card-img {
+    border: 10px solid var(--white);
+    width: 100%;
+    transition: transform .5s;
+    box-shadow: var(--box-shadow);
+    margin: 20px 0;
+}
+
+.card-img:hover {
+    transform: scale(1.3);
+    transition: all 0.5s ease-in-out 0.1ms;
+}
+
+.icon {
+    width: 80px;
+}
+
+.card-caption {
+    font-size: 1.4rem;
+}
+
+.background {
+    background-color: var(--secondary-color);
+    height: 700px;
+    grid-column: 1/13;
+    grid-row: 3/9;
+}
+
+.mountains {
+    grid-column: 2/8;
+    grid-row: 3/9;
+}
+
+.msg {
+    grid-column: 7/12;
+    grid-row: 5/7;
+    color: var(--white);
+    background-color: var(--accent4-color);
+    padding: 35px;
+    box-shadow: var(--box-shadow);
+    line-height: 1.5em;
+    display: flex;
+    flex-direction: column;
+}
+
+.msg-title {
+    line-height: 1em;
+}
+
+/***************************************
+*
+*   Homepage Styling - End
+*
+****************************************/
+
+/*************************************
+*
+*   Modal CSS - Display wireframe images
+*
+**************************************/
+
+.modal-window div:not(:last-of-type) {
+    margin-bottom: 15px;
+}
+
+.modal-window {
+    position: fixed;
+    background-color: var(--transparent-background-color);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    visibility: hidden;
+    opacity: 0;
+    /* pointer-events: none; */
+    transition: all 0.3s;
+}
+
+.modal-window:target {
+    visibility: visible;
+    opacity: 1;
+    /* pointer-events: auto; */
+}
+
+.modal-window > div {
+    border-radius: 1rem;
+    max-width: fit-content;
+    position: relative;
+    top: 30px;
+    left: 50%;
+    bottom: 30px;
+    transform: translateX(-50%);
+    padding: 2em;
+    background: var(--white);
+}
+
+.modal-window img {
+    max-width: fit-content;
+    max-height: 90vh;
+}
+
+.modal-close {
+    color: var(--primary-color);
+    line-height: 50px;
+    font-size: 80%;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 70px;
+}
+
+.modal-close:hover {
+    color: black;
+}
+
+/***************************************
+*
+*   Modal CSS - End
+*
+****************************************/
+
+/***************************************
+*
+*   About Us styling - Begin
+*
+****************************************/
+
+.hero h1 {
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    text-align: center;
+    color: var(--white);
+    background-color: var(--transparent-background-color);
+    text-shadow: -1px -1px 0 var(--black), 1px -1px 0 var(--black), -1px 1px 0 var(--black), 1px 1px 0 var(--black);
+}
+
+.hero article {
+    background-color: var(--transparent-background-color);
+    position: absolute;
+    bottom: 3rem;
+    left: 6rem;
+    right: 6rem;
+}
+
+.hero article img {
+    float: right;
+    margin: 2rem;
+    width: 15rem;
+}
+
+.hero article p {
+    color: var(--white);
+    /* text-shadow: -1px -1px 0 var(--black), 1px -1px 0 var(--black), -1px 1px 0 var(--black), 1px 1px 0 var(--black); */
+    font-size: x-large;
+    text-align: left;
+}
+
+.history-section {
+    margin: 50px 0;
+    display: grid;
+    /* This creates three columns */
+    grid-template-columns: 2fr 1fr 2fr;
+    /* This is the gap between columns */
+    gap: 2em;
+}
+
+.adventures {
+    margin: 50px 0;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    justify-items: center;
+}
+
+.history-section > h2,
+.adventures > h2 {
+    grid-column: 1/-1;
+    grid-row: 1;
+    justify-self: center;
+    padding: 1em 0;
+}
+
+figure:nth-of-type(odd) {
+    background-color: var(--accent1-color);
+    color: var(--white);
+    align-self: center;
+
+}
+
+figure:nth-of-type(even) {
+    background-color: var(--accent2-color);
+    color: var(--white);
+    align-self: center;
+}
+
+figure:nth-last-child(odd):hover,
+figure:nth-last-of-type(even):hover {
+    transform: scale(1.3);
+    transition: all 0.5s ease-in-out 0.1ms;
+}
+
+figcaption {
+    text-align: center;
+    padding: 1em 0;
+}
+
+/***************************************
+*
+*   about us styling - end 
+*
+****************************************/
+/***************************************
+*
+*    CSS for Contact Us - Begin
+*
+***************************************/
 
 .contact-page {
     display: grid;
-    grid-template-columns: 5fr 1fr;
-    gap: 4rem;
-    padding: 100px 50px; 
-    max-width: 100px;
-    
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
 }
 
 .contact-info {
     grid-column: 1 / -1;
-    justify-self: center;
     text-align: center;
 }
 
-
- .gmap {
-    grid-column: 1/-1;
+.gmap {
+    grid-column: 1 / -1;
     grid-row: 2;
     border: 0;
-   
-    
- }
- /*contact us form formatting begin*/
+    width: 450px;
+    height: 400px;
+}
 
- .contact-form  {
+/* contact us form formatting begin */
+.contact-form {
     grid-column: 2;
     grid-row: 2;
     display: grid;
     grid-template-columns: 1fr 4fr;
-    gap: 2rem 1rem;
-    
- }
+    gap: 1rem;
+    align-items: center;
+}
+
 .purpose {
     grid-column: 1 / -1;
     display: grid;
@@ -370,7 +674,7 @@ footer nav.socialmedia img:hover {
     margin: 0;
     padding: 0;
     grid-column: 1;
-    justify-self: end;
+    justify-self: start;
 }
 
 .purpose fieldset {
@@ -378,6 +682,7 @@ footer nav.socialmedia img:hover {
     display: grid;
     grid-template-columns: 1.25rem auto;
     gap: .5rem .25rem;
+    border: none;
 }
 
 .full-w {
@@ -385,6 +690,7 @@ footer nav.socialmedia img:hover {
     display: flex;
     flex-direction: column;
 }
+
 .subscribe {
     grid-column: 1 / -1;
     display: flex;
@@ -392,24 +698,337 @@ footer nav.socialmedia img:hover {
     gap: .5rem;
 }
 
+.btn {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    padding: 1rem 2rem;
+    cursor: pointer;
+}
 
+.btn:hover {
+    background-color: var(--accent1-color);
+    color: var(--white);
+}
 
+.btn-submit {
+    grid-column: 1 / -1;
+    justify-self: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+    width: 100%;
+    border-radius: 0 0 15px 15px;
+}
 
-
-
-
-
-/*contact us form formatting end*/
- .employees {
-    grid-column: 1 / 3;
-    /* /* grid-column: 1 / -1; */
-    /* grid-column: 1 / span 2; */
+.employees {
+    grid-column: 1/3;
+    /* grid-column: 1 / -1;
+    grid-column: 1 / span 2; */
     grid-row: 3;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 3rem 1rem;
+    gap: 3rem;
 }
+
+.employees figure {
+    width: 200px;
+    justify-self: center;
+}
+
+.employees img {
+    width: 100%;
+}
+
 .employees h2 {
     grid-column: 1 / -1;
     justify-self: center;
 }
+
+input,
+label,
+textarea,
+select {
+    font-size: 18px;
+    width: 100%;
+}
+
+input[type="checkbox"] {
+    width: 1rem;
+    height: 1rem;
+    align-self: center;
+    margin: 1rem 0;
+}
+
+.right {
+    justify-self: right
+}
+
+.reason {
+    grid-column: 1/-1;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1rem 1fr;
+    gap: 1rem;
+    align-items: center;
+}
+
+.signup {
+    grid-column: 1/-1;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border: 1px solid var(--focus-red);
+    background-color: var(--focus-green);
+    color: var(--focus-gray);
+}
+
+.submit {
+    padding: 1em;
+    margin: 1em;
+    background-color: var(--button-background-color);
+    color: var(--button-color);
+    border: 1px solid var(--button-border-color);
+    box-shadow: var(--box-shadow);
+    border-radius: 25px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: 900;
+}
+
+/*******************************************
+*
+*        Contact Us CSS - End
+*
+*******************************************/
+
+/*******************************************
+*
+*         Trips Page CSS - Begin
+*
+*******************************************/
+
+.trips-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 4fr;
+    gap: 1em 5px;
+}
+
+.trips-table {
+    grid-column: 1/-1;
+    grid-row: 2/4;
+    margin: 6rem auto;
+}
+
+.trips-table h2 {
+    grid-column: 1/-1;
+    grid-row: 1;
+    justify-self: center;
+}
+
+.trip-duration {
+    grid-column: 1;
+    padding: .5rem 1rem;
+}
+
+.trip-cost {
+    grid-column: 2;
+    padding: .5rem 1rem;
+}
+
+.trip-name {
+    grid-column: 3;
+    padding: .5rem 1rem;
+}
+
+.trip-cost:nth-of-type(even),
+.trip-duration:nth-of-type(odd),
+.trip-name:nth-of-type(odd) {
+    background-color: var(--table-background-color-odd);
+}
+
+.trip-cost:nth-of-type(odd),
+.trip-duration:nth-of-type(even),
+.trip-name:nth-of-type(even) {
+    background-color: var(--table-background-color-even);
+}
+
+.table-heading {
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.25em;
+    letter-spacing: 1px;
+}
+
+.trips {
+    gap: 50px;
+    background-color: var(--light-gray);
+    padding: clamp(1.25rem, 0.8014018692rem + 0.9345794393vw, 1.625rem) clamp(1.25rem, 0.3528037383rem + 1.8691588785vw, 2rem) 0;
+}
+
+.trips-card {
+    border-radius: 1.25rem;
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+}
+
+.trips-card img {
+    border-radius: 1.25rem 1.25rem 0 0;
+}
+
+.trips-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: clamp(1.25rem, 0.8014018692rem + 0.9345794393vw, 1.625rem) clamp(1.25rem, 0.3528037383rem + 1.8691588785vw, 2rem) 0;
+}
+
+.trips-card-content p {
+    margin: 0;
+    padding: 0;
+}
+
+.price-footer {
+    margin-top: 3rem;
+    color: var(--black);
+    background-color: var(--white);
+    display: block;
+    margin: 0 0 1rem 0;
+}
+
+.pricing {
+    font-size: .8em;
+    letter-spacing: 1px;
+}
+
+.price-font {
+    font-weight: 700;
+    font-size: 1.25em;
+}
+
+/*******************************************
+*
+*               Trips Page CSS - End
+*
+*******************************************/
+
+/*******************************************
+*
+*   Grid Layout placements definitions
+*
+*******************************************/
+.cols-all {
+    grid-column: 1/-1;
+}
+
+.cols12 {
+    grid-column: 1/13;
+}
+
+.cols2-6 {
+    grid-column: 2/6;
+}
+
+.cols2-7 {
+    grid-column: 2/7;
+}
+
+.cols2-12 {
+    grid-column: 2/12;
+}
+
+.cols8-12 {
+    grid-column: 8/12;
+}
+
+.cols7-12 {
+    grid-column: 7/12;
+}
+
+.cols9-12 {
+    grid-column: 9/12;
+}
+
+.cols4-9 {
+    grid-column: 4/9;
+}
+
+.cols4-10 {
+    grid-column: 4/10;
+}
+
+.row1 {
+    grid-row: 1
+}
+
+.rows2 {
+    grid-row: 1/3;
+}
+
+.rows4 {
+    grid-row: 1/5;
+}
+
+.rows8 {
+    grid-row: 1/9;
+}
+
+.row2 {
+    grid-row: 2;
+}
+
+.row3 {
+    grid-row: 3;
+}
+
+.row4 {
+    grid-row: 4;
+}
+
+.row5 {
+    grid-row: 5;
+}
+
+.row6 {
+    grid-row: 6;
+}
+
+.row7 {
+    grid-row: 7;
+}
+
+.rows1-3 {
+    grid-row: 1/3;
+}
+
+.rows2-4 {
+    grid-row: 2/4;
+}
+
+.rows3-5 {
+    grid-row: 3/5;
+}
+
+.rows4-6 {
+    grid-row: 4/6;
+}
+
+.rows5-7 {
+    grid-row: 5/7;
+}
+
+.rows6-8 {
+    grid-row: 6/8;
+}
+
+.rows7-9 {
+    grid-row: 7/9;
+}
+
+/*******************************************
+*
