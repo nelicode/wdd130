@@ -127,7 +127,7 @@ a {
 header,
 main,
 footer {
-    max-width: 1248px;
+    max-width: 100%;
     margin: auto;
 }
 
@@ -637,6 +637,10 @@ figcaption {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
+    max-width: 1600px 
+padding: 60px 100px 
+margin: 20px auto 
+box-shadow
 }
 
 .contact-info {
