@@ -242,7 +242,7 @@ footer nav.socialmedia {
     margin-top: 15px;
     display: flex;
     justify-content: flex-end;
-    gap: 0 rem;
+    gap: 1rem;
     grid-column: -1;
     background-color: unset;
 }
