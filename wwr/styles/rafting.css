@@ -637,9 +637,9 @@ figcaption {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
-    max-width: 1600px 
-padding: 60px 100px 
-margin: 20px auto 
+    max-width: 1000px 
+padding: 20px 500px 
+margin: 5px auto 
 box-shadow
 }
 
