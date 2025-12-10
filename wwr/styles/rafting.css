@@ -1074,9 +1074,10 @@ select:focus {
     border-radius: 15px;
     margin-bottom: 3rem;
     margin-top: 3rem;  /* ESPACIO ARRIBA (separa de la imagen hero) */
-    box-shadow: 0 8px 20px --accent1-color(0,0,0,0.3);
+    box-shadow: 0 8px 20px var(--accent4-color)(0,0,0,0.3);
     width: 1250px;
-    max-width: 3000px;  /* MÁS ANCHO */
+    max-width: 3000px;
+  /* MÁS ANCHO */
 
 }
 
