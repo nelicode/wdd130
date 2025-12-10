@@ -594,41 +594,7 @@ footer nav.socialmedia img:hover {
     text-align: center;
     margin: 0;
 }
-/*ADVENTURE*/
-.adventures figure {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    width: 100%;
-}
 
-.adventures figure img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    display: block;
-}
-
-figure:nth-of-type(odd) figcaption {
-    background-color: var(--accent1-color);
-    color: var(--white);
-    text-align: center;
-    padding: 1em 0;
-    margin: 0;
-}
-
-figure:nth-of-type(even) figcaption {
-    background-color: var(--accent2-color);
-    color: var(--white);
-    text-align: center;
-    padding: 1em 0;
-    margin: 0;
-}
-
-figure:hover {
-    transform: scale(1.05);
-    transition: all 0.3s ease-in-out;
-}
 
 figure:nth-of-type(odd) {
     background-color: var(--accent1-color);
