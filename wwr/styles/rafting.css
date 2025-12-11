@@ -1424,14 +1424,6 @@ select:focus {
 }
 
 /* Adventures Section - Following About Us Pattern */
-.adventures {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    margin: 40px auto;
-    text-align: center;
-}
 
 .adventures figure {
     background-color: var(--accent1-color);
@@ -1458,7 +1450,6 @@ select:focus {
     height: 180px;  /* Misma altura para todas */
     object-fit: cover;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
 }
 
 .adventures figcaption {
