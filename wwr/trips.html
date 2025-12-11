@@ -25,12 +25,13 @@
         </nav>
     </header>
 
-    <main class="grid">
-        <div class="grid cols12 hero">
-            <img class="cols12 rows8" src="images/Rafting Tara.jpg"
+    <main>
+        <!-- Hero Section -->
+        <div class="hero">
+            <img src="images/Rafting Tara.jpg"
               alt="Group of people wearing helmets and life jackets paddling a yellow raft through whitewater rapids with splashing water and rocky riverbanks in the background conveying excitement and teamwork in an adventurous outdoor setting">
-            <a class="button-box cols4-10 row6" href="contact.html">Contact Us</a>
-            <h1 class="home-title cols4-10 row1">Conquering the Whitewater</h1>
+            <h1 class="home-title">Conquering the Whitewater</h1>
+            <a class="button-box" href="contact.html">Contact Us</a>
         </div>
 
         <!-- Call to Action -->
@@ -38,153 +39,88 @@
             <div class="cta-content">
                 <h2>¿Ready for adventure?</h2>
                 <p>Explore our exciting rafting excursions for all levels</p>
-                <a href="trips.html" class="btn-primary">View our excursions</a>
+                <a href="#trips-table" class="btn-primary">View our excursions</a>
             </div>
         </section>
 
-        <!-- This is not the correct HTML for the assignment. You cannot copy this. -->
-        <section class="trips-table trips-grid">
-            <h2>Rafting Trips Summary</h2>
-            <p class="trip-duration table-heading">Trip Length</p>
-            <p class="trip-cost table-heading">Cost</p>
-            <p class="trip-name table-heading">Trip Name</p>
-            <p class="trip-duration row1-color">1 Day Class 1</p>
-            <p class="trip-cost row1-color">$100</p>
-            <p class="trip-name row1-color"> Family Adventure</p>
-            <p class="trip-duration row2-color">2 Day Class 2</p>
-            <p class="trip-cost row2-color">$400</p>
-            <p class="trip-name row2-color">Family Teenage Children</p>
-            <p class="trip-duration">1 Day Class 1</p>
-            <p class="trip-cost">$500</p>
-            <p class="trip-name">Relaxing Adventure</p>
-            <p class="trip-duration">1 Day Class 2</p>
-            <p class="trip-cost">$500</p>
-            <p class="trip-name">Adventure with Class 2 Rapids</p>
-            <p class="trip-duration">2 Day Class 1</p>
-            <p class="trip-cost">$1000</p>
-            <p class="trip-name">Relaxing Extended Scenic Adventure</p>
-            <p class="trip-duration">2 Day Class 1</p>
-            <p class="trip-cost">$1000</p>
-            <p class="trip-name">Adventure with Class 3 Rapids</p>
-        </section>
+        <!-- Trips Table -->
+        <div class="tripstable" id="trips-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Location</th>
+                        <th>Description</th>
+                        <th>Duration</th>
+                        <th>Price Per Person</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Grand Canyon, Arizona</td>
+                        <td>Experience the thrill of rafting through one of the world's most iconic natural wonders. Navigate the Colorado River's rapids while surrounded by towering canyon walls and stunning desert landscapes. This adventure offers both excitement and breathtaking scenery.</td>
+                        <td>3 Hours est.</td>
+                        <td>$85</td>
+                    </tr>
+                    <tr>
+                        <td>Salmon River, Idaho</td>
+                        <td>Known as the "River of No Return," the Salmon River offers pristine wilderness rafting through central Idaho's backcountry. With challenging Class III-IV rapids and remote mountain scenery, this trip provides an unforgettable adventure through untouched forests and deep canyons.</td>
+                        <td>5 Hours est.</td>
+                        <td>$95</td>
+                    </tr>
+                    <tr>
+                        <td>Arkansas River, Colorado</td>
+                        <td>The Arkansas River features spectacular Rocky Mountain scenery with rapids ranging from Class II to Class V. Perfect for all skill levels, this river flows through Browns Canyon National Monument, offering dramatic granite cliffs and crystal-clear mountain water.</td>
+                        <td>4 Hours est.</td>
+                        <td>$70</td>
+                    </tr>
+                    <tr>
+                        <td>Gauley River, West Virginia</td>
+                        <td>Considered one of the most challenging whitewater rivers in the eastern United States, the Gauley River delivers heart-pounding Class V rapids during fall release season. This adventure is perfect for experienced rafters seeking the ultimate adrenaline rush.</td>
+                        <td>6 Hours est.</td>
+                        <td>$110</td>
+                    </tr>
+                    <tr>
+                        <td>Snake River, Wyoming</td>
+                        <td>Float through the majestic Teton Range on the scenic Snake River. This family-friendly rafting experience offers stunning views of Grand Teton National Park, abundant wildlife viewing opportunities, and gentle Class I-II rapids perfect for beginners and nature enthusiasts.</td>
+                        <td>3 Hours est.</td>
+                        <td>$65</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
-        <section class="trips grid cols12">
-            <h2 class="cols12 row1 center">Rafting Trip Details</h2>
-            <article class="trips-card cols2-7 rows2-4">
+        <!-- Adventure Cards Section -->
+        <section class="adventures">
+    <figure>
+        <img src="images/Family Rafting.jpg" alt="Lazy Family Adventure">
+        <figcaption>Lazy Family Adventure</figcaption>
+    </figure>
 
-                <img src="images/Family Rafting.jpg"
-                  alt="Group of people wearing yellow helmets and life jackets paddling a yellow raft through whitewater rapids with splashing water and rocky riverbanks in the background conveying excitement and teamwork in an adventurous outdoor setting">
+    <figure>
+        <img src="images/adventure class2.jpg" alt="Adventure with Class 2 Rapids">
+        <figcaption>Adventure with Class 2 Rapids</figcaption>
+    </figure>
 
-                <section class="trips-card-content">
-                    <h2>Lazy Family Adventure</h2>
-                    <p><span class="bold">Location:</span> Idaho</p>
-                    <p><span class="bold">Adventure Level: </span>Easy to Moderate</p>
-                    <p><span class="bold">Minimum Age:</span> 10 (13 during high water)</p>
-                </section>
-                <footer class="price-footer">
-                    <span class="pricing">From: </span><span class="price-font">$200</span>
-                </footer>
-            </article>
-            <article class="trips-card cols7-12 rows3-5">
+    <figure>
+        <img src="images/relaxing scenic.jpg" alt="Relaxing Extended Scenic">
+        <figcaption>Relaxing Extended Scenic Adventure</figcaption>
+    </figure>
 
-                <img src="images/children.jpg"
-                  alt="Group of people wearing blue helmets and orange life jackets paddling a yellow raft through fast-moving whitewater rapids surrounded by lush green forest and rocky riverbank conveying excitement and teamwork in an adventurous outdoor setting">
-
-                <section class="trips-card-content">
-                    <h2>Family Teenage Children</h2>
-                    <p><span class="bold">Location:</span> Idaho</p>
-                    <p><span class="bold">Adventure Level: </span>Easy</p>
-                    <p><span class="bold">Minimum Age:</span> 9 ( 10 during high water)</p>
-                </section>
-                <footer class="price-footer">
-                    <span class="pricing">From: </span><span class="price-font">$400</span>
-                </footer>
-            </article>
-            <article class="trips-card cols2-7 rows4-6">
-
-                <img src="images/relaxing.jpg"
-                  alt="Group of people wearing helmets and life jackets paddling an orange raft through splashing whitewater rapids with turbulent water surrounding them conveying excitement and teamwork in a fast-moving river environment">
-
-                <section class="trips-card-content">
-                    <h2>Scenic Relaxing Adventure</h2>
-                    <p><span class="bold">Location:</span> Idaho</p>
-                    <p><span class="bold">Adventure Level: </span>Moderate</p>
-                    <p><span class="bold">Minimum Age:</span> 11</p>
-                </section>
-                <footer class="price-footer">
-                    <span class="pricing">From: </span><span class="price-font">$600</span>
-                </footer>
-            </article>
-            <article class="trips-card cols7-12 rows5-7">
-
-                <img src="images/adventure class2.jpg"
-                  alt="Group of people wearing helmets and life jackets paddling a raft through splashing whitewater rapids with rocky riverbanks in the background conveying excitement and teamwork">
-
-                <section class="trips-card-content">
-                    <h2>Adventure with Class 2 Rapids</h2>
-                    <p><span class="bold">Location:</span> Idaho</p>
-                    <p><span class="bold">Adventure Level: </span>Moderately Challenging</p>
-                    <p><span class="bold">Minimum Age:</span> 13</p>
-                </section>
-                <footer class="price-footer">
-                    <span class="pricing">From: </span><span class="price-font">$300</span>
-                </footer>
-            </article>
-            <article class="trips-card cols2-7 rows6-8">
-
-                <img src="images/relaxing scenic.jpg"
-                  alt="Group of people wearing helmets and life jackets paddling a raft through fast-moving whitewater rapids surrounded by lush green trees and rocky riverbanks conveying excitement and adventure">
-
-                <section class="trips-card-content">
-                    <h2>Relaxing Extended Scenic Adventure</h2>
-                    <p><span class="bold">Location:</span> Idaho</p>
-                    <p><span class="bold">Adventure Level: </span>Moderate</p>
-                    <p><span class="bold">Minimum Age:</span> 14</p>
-                </section>
-                <footer class="price-footer">
-                    <span class="pricing">From: </span><span class="price-font">$1000</span>
-                </footer>
-            </article>
-            <article class="trips-card cols7-12 rows7-9">
-
-                <img src="images/adventure class3.jpg"
-                  alt="Person wearing a blue helmet and life jacket paddling a kayak through splashing whitewater rapids on a fast-moving river surrounded by green trees and rocky riverbank conveying excitement and adventure">
-                <section class="trips-card-content">
-                    <h2>Adventure with Class 3 Rapids</h2>
-                    <p><span class="bold">Location:</span> Idaho</p>
-                    <p><span class="bold">Adventure Level: </span>Challenging</p>
-                    <p><span class="bold">Minimum Age:</span> 16</p>
-                </section>
-                <footer class="price-footer">
-                    <span class="pricing">From: </span><span class="price-font">$1200</span>
-                </footer>
-            </article>
-        </section>
- <section class="newsletter-section">
-    <div class="grid">
-            <div class="newsletter-container">
-                <h2>Subscribe to our newsletter</h2>
-                <p>Receive special offers, rafting tips, and news about new routes</p>
-                <form class="newsletter-form" method="post" action="subscribe.php">
-                    <div class="form-group">
-                        <label for="name">Full Name:</label>
-                        <input type="text" id="name" name="name" required placeholder="Your name">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email address:</label>
-                        <input type="email" id="email" name="email" required placeholder="tu@email.com">
-                    </div>
-                    <button type="submit" class="btn-secondary">Subscribe</button>
-                </form>
-            </div>
-        </section>
+    <figure>
+        <img src="images/adventure class3.jpg" alt="Adventure with Class 3 Rapids">
+        <figcaption>Adventure with Class 3 Rapids</figcaption>
+    </figure>
+    
+    <figure>
+        <img src="images/children.jpg" alt="Family Teenage Children">
+        <figcaption>Family Teenage Children</figcaption>
+    </figure>
+</section>
     </main>
 
     <!-- Footer -->
-        </section>
-     </main>
-<footer>
-    <p>© 2025 Rio Bravo Expeditions- Nelida Colque Salas</p>
+    <footer>
+        <p>© 2025 Rio Bravo Expeditions- Nelida Colque Salas</p>
         <nav class="socialmedia">
             <a href="https://facebook.com" target="_blank">
                 <img src="images/5771766.png"
@@ -198,9 +134,6 @@
             </a>
         </nav>
     </footer>
-    <!-- <script>
-        const date = new Date(document.lastModified);
-        document.getElementById("demo").innerHTML = date.getFullYear();
-    </script> -->
+
 </body>
 </html>
